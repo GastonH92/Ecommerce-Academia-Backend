@@ -9,7 +9,7 @@ const connection = async () => {
     }
 
     try {
-        await mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://gastonh92:admin@clusterecommerce.tronulh.mongodb.net/?retryWrites=true&w=majority&appName=ClusterEcommerce', {
+        await mongoose.connect(process.env.MONGODB_URI , {
             
             useNewUrlParser: true,
             useUnifiedTopology: true,
